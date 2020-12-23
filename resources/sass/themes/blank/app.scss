@@ -1,0 +1,11 @@
+@tailwind base;
+
+@tailwind components;
+
+@import "components/top-bar";
+@import "components/menu-mobile";
+@import "components/page-content";
+@import "components/page-section-banner";
+@import "components/footer";
+
+@tailwind utilities;

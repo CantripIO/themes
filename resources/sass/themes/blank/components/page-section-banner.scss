@@ -1,0 +1,27 @@
+.page-section-banner{
+  .banner-container{
+    @apply relative block w-full;
+  }
+  .banner-element{
+    @apply bg-center bg-cover flex flex-col justify-end block h-60;
+    @screen sm {
+      @apply h-80;
+    }
+    @screen lg {
+      @apply h-96;
+    }
+  }
+  .banner-title-inner{
+    @apply inline-block p-2 bg-white text-2xl font-black;
+  }
+  .banner-body{
+    @apply mt-4;
+  }
+  .banner-body-inner{
+    @apply inline-block p-2 bg-white text-sm;
+  }
+}
+
+.VueCarousel-pagination{
+  @apply z-10 -mt-20;
+}

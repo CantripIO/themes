@@ -1,0 +1,115 @@
+.top-bar {
+  @apply relative bg-white;
+}
+
+.top-bar-container {
+  @apply max-w-7xl mx-auto px-4;
+  @screen sm {
+    @apply px-6;
+  }
+}
+
+.top-bar-items {
+  @apply flex justify-between items-center border-b-2 border-gray-100 py-6;
+  @screen md {
+    @apply justify-start space-x-10;
+  }
+}
+
+.top-bar-brand-container {
+  @apply flex justify-start;
+  @screen lg {
+    @apply w-0 flex-1;
+  }
+}
+
+.top-bar-brand {
+
+}
+
+.top-bar-brand-label {
+  @apply sr-only;
+}
+
+.top-bar-brand-image {
+  @apply h-8 w-auto;
+  @screen sm {
+    @apply h-10;
+  }
+}
+.top-bar-menu-toggle-button-container{
+  @apply -mr-2 -my-2;
+  @screen md {
+    @apply hidden;
+  }
+}
+.top-bar-menu-toggle-button{
+  @apply bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400;
+  &:hover{
+    @apply text-gray-500 bg-gray-100;
+  }
+  &:focus{
+    @apply outline-none ring-2 ring-inset ring-indigo-500;
+  }
+}
+.top-bar-menu-toggle-label{
+  @apply sr-only;
+}
+.top-bar-menu-toggle-icon{
+  @apply h-6 w-6;
+}
+.top-bar-menu-primary-container{
+  @apply hidden space-x-10 justify-end;
+  @screen md {
+    @apply flex;
+  }
+}
+.top-bar-menu-primary{
+  @apply space-x-10 justify-end;
+  @screen md {
+    @apply flex;
+  }
+}
+.top-bar-menu-dropdown-group{
+  @apply relative;
+}
+.top-bar-menu-item{
+  @apply text-base font-medium text-gray-500;
+  &:hover{
+    @apply text-gray-900;
+  }
+}
+.top-bar-menu-item-active{
+  @apply text-gray-900;
+}
+.top-bar-menu-item-dropdown-toggle{
+  @apply group rounded-md bg-white inline-flex items-center;
+  &:focus{
+    @apply outline-none ring-2 ring-offset-2 ring-gray-500;
+  }
+}
+.top-bar-menu-dropdown-expand-icon{
+  @apply ml-2 h-5 w-5 text-gray-400;
+  //group-hover:text-gray-500
+}
+.top-bar-menu-dropdown-container{
+  @apply absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-sm;
+  @screen lg {
+    @apply ml-0 left-1/2 -translate-x-1/2;
+  }
+  @screen sm {
+    @apply px-0;
+  }
+}
+.top-bar-menu-dropdown{
+  @apply rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden relative bg-white px-5 py-3;
+  @screen sm {
+    @apply gap-8 p-8;
+  }
+}
+.top-bar-menu-dropdown-item{
+  @apply -m-3 px-3 py-4 flex items-start rounded-lg;
+  &:hover{
+    @apply bg-gray-50;
+  }
+}

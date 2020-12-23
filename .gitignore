@@ -1,0 +1,10 @@
+node_modules
+public/js
+public/css
+public/img
+public/mix-manifest.json
+.env
+npm-debug.log
+yarn-error.log
+.idea
+.DS_STORE
