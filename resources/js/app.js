@@ -10,6 +10,8 @@ Vue.component('layout-menu-toggle-button', require("./components/layout/menu-tog
 Vue.component('layout-menu-primary', require("./components/layout/menu-primary").default);
 Vue.component('layout-menu-mobile', require("./components/layout/menu-mobile").default);
 Vue.component('layout-page-section-banner', require("./components/layout/page-section-banner").default);
+Vue.component('layout-page-section-content-block', require("./components/layout/page-section-content-block").default);
+Vue.component('layout-page-section-content-block-without-image', require("./components/layout/page-section-content-block-without-image").default);
 Vue.component('layout-footer', require("./components/layout/footer").default);
 
 const app = new Vue({

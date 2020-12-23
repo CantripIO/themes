@@ -3,10 +3,7 @@
 }
 
 .top-bar-container {
-  @apply max-w-7xl mx-auto px-4;
-  @screen sm {
-    @apply px-6;
-  }
+  @apply page-container;
 }
 
 .top-bar-items {
