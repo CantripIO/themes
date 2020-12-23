@@ -1,0 +1,30 @@
+.page-section-gallery{
+  @apply page-container py-8;
+}
+.gallery-container{
+  @apply space-y-12;
+  @screen sm {
+    @apply grid grid-cols-2 gap-x-6 gap-y-12 space-y-0;
+  }
+  @screen lg {
+    @apply grid-cols-3 gap-x-8;
+  }
+}
+.gallery-item-container{
+
+}
+.gallery-item{
+  @apply space-y-4;
+}
+.gallery-item-image-container{
+  //@apply aspect-w-3 aspect-h-2;
+}
+.gallery-item-image{
+  @apply object-cover shadow-lg rounded-lg w-full;
+}
+.gallery-content-container{
+  @apply space-y-2;
+}
+.gallery-title{
+  @apply text-lg leading-6 font-medium space-y-1;
+}

@@ -1,31 +1,30 @@
 <template>
     <div class="page-section page-section-content-block">
         <div class="content-block-content editor-generated">
-            <h1>Full Content Block Example</h1>
+            <h1>Faerûn Geography</h1>
 
-            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+            <p><strong>The continent included terrain that was as varied as any other.</strong> Besides the exterior coastline to the <em>west and south</em>, the most dominant feature on the continent was the <code>Sea of Fallen Stars</code>. This was an irregular inland sea that kept the interior lands fertile, connected the west and east regions of Faerûn and <a href="#">served as a major trade route for many of the bordering nations</a>.</p>
 
-            <h2>Header Level 2</h2>
+            <h2>Interior</h2>
 
             <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
+                <li>Cormyr: A feudal nation of humans living on former elven and dragon territory.</li>
+                <li>The Dragon Coast: The southern coast of the Sea of Fallen Stars was a den for pirates, thieves and members of the regions' more unseemly organizations.</li>
             </ol>
 
-            <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+            <blockquote><p>With the exception of the Shining Plains, these lands lay along the irregular coastline of the western Sea of Fallen Stars. In the north, the Dragonmere arm of the sea extended far to the west, ending close to the Western Heartlands. To the south, the Vilhon Reach formed a second arm leading to the southwest.</p></blockquote>
 
-            <h3>Header Level 3</h3>
+            <h3>Regions</h3>
 
             <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
+                <li>Cormyr: This was a prosperous, civilized realm that lay at the western end of the Sea of Fallen Stars, to the south of the Anauroch desert and the Dalelands</li>
+                <li>Sembia: On the northwest shore of the Sea of Fallen Stars was this prosperous and ambitious nation of merchants and traders, that served as a vassal state of the returned Netheril.</li>
             </ul>
 
+            <p>You can use the code below to embed our tabletop rpg software:</p>
             <pre><code>
-#header h1 a {
-  display: block;
-  width: 300px;
-  height: 80px;
+if(player.alignment == 'chaotic-neutral'){
+    player.attack(randomNPC);
 }
 </code></pre>
         </div>

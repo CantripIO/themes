@@ -4,18 +4,24 @@
             <img class="content-block-featured-image" src="https://picsum.photos/id/490/500/400" />
         </div>
         <div class="content-block-content editor-generated">
-            <h1>Section With Image</h1>
+            <h2>Druidcraft</h2>
 
-            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+            <p>
+                <strong>Casting Time:</strong> 1 action<br/>
+                <strong>Range:</strong> 30 feet<br/>
+                <strong>Components:</strong> V, S<br/>
+                <strong>Duration:</strong> Instantaneous<br/>
+            </p>
 
-            <h2>Header Level 2</h2>
+            <p><em>Whispering to the spirits of nature</em>, you create one of the following effects within range:</p>
 
-            <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-            </ol>
+            <ul>
+                <li>You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.</li>
+                <li>You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.</li>
+                <li>You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.</li>
+                <li>You instantly light or snuff out a candle, a torch, or a small campfire.</li>
+            </ul>
 
-            <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
         </div>
     </div>
 </template>

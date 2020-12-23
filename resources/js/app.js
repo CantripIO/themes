@@ -11,7 +11,9 @@ Vue.component('layout-menu-primary', require("./components/layout/menu-primary")
 Vue.component('layout-menu-mobile', require("./components/layout/menu-mobile").default);
 Vue.component('layout-page-section-banner', require("./components/layout/page-section-banner").default);
 Vue.component('layout-page-section-content-block', require("./components/layout/page-section-content-block").default);
+Vue.component('layout-page-section-content-block-2', require("./components/layout/page-section-content-block-2").default);
 Vue.component('layout-page-section-content-block-without-image', require("./components/layout/page-section-content-block-without-image").default);
+Vue.component('layout-page-section-gallery', require("./components/layout/page-section-gallery").default);
 Vue.component('layout-footer', require("./components/layout/footer").default);
 
 const app = new Vue({

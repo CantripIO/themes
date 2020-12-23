@@ -1,5 +1,5 @@
 .menu-mobile-container{
-  @apply absolute top-0 inset-x-0 p-2 transition transform origin-top-right;
+  @apply absolute top-0 inset-x-0 p-2 transition transform origin-top-right z-50;
   @screen md {
     @apply hidden;
   }
