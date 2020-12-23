@@ -2,12 +2,12 @@
   @apply page-container py-8;
 }
 .gallery-container{
-  @apply space-y-12;
+  @apply space-y-0 grid grid-cols-2 gap-x-6 gap-y-12;
   @screen sm {
-    @apply grid grid-cols-2 gap-x-6 gap-y-12 space-y-0;
+    @apply grid grid-cols-3 gap-x-6 gap-y-12 space-y-0;
   }
   @screen lg {
-    @apply grid-cols-3 gap-x-8;
+    @apply grid-cols-4 gap-x-8;
   }
 }
 .gallery-item-container{

@@ -17,6 +17,7 @@ Vue.component('layout-page-section-content-block', require("./components/layout/
 Vue.component('layout-page-section-content-block-2', require("./components/layout/page-section-content-block-2").default);
 Vue.component('layout-page-section-content-block-without-image', require("./components/layout/page-section-content-block-without-image").default);
 Vue.component('layout-page-section-gallery', require("./components/layout/page-section-gallery").default);
+Vue.component('layout-page-section-collection-cards', require("./components/layout/page-section-collection-cards").default);
 Vue.component('layout-footer', require("./components/layout/footer").default);
 
 const app = new Vue({
