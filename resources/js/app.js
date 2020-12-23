@@ -4,6 +4,9 @@ window.Vue = Vue;
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);
 
+import VueImg from 'v-img';
+Vue.use(VueImg);
+
 Vue.component('layout-top-bar', require("./components/layout/top-bar").default);
 Vue.component('layout-branding', require("./components/layout/branding").default);
 Vue.component('layout-menu-toggle-button', require("./components/layout/menu-toggle-button").default);
