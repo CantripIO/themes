@@ -24,13 +24,38 @@ Vue.component('layout-page-section-code', require("./components/layout/page-sect
 Vue.component('layout-page-section-form', require("./components/layout/page-section-form").default);
 Vue.component('layout-footer', require("./components/layout/footer").default);
 
+window.primaryColor = null;
+
 const app = new Vue({
     el: '#app',
     data: {
         menusOpen: [],
+        theme: "blank",
+        primaryColor: "#815ad5",
         demoCompanyName: "Silent Image, LLC",
         demoLogoPath: "./img/logo-silentimagellc.png",
         demoIconPath: "./img/icon-silentimagellc.png",
+    },
+    mounted: function(){
+        let hashData = this.getHashData();
+        if(hashData.theme){
+            this.theme = hashData.theme;
+        }
+        if(hashData.primaryColor){
+            this.primaryColor = hashData.primaryColor;
+        }
+        if(hashData.demoCompanyName){
+            this.demoCompanyName = hashData.demoCompanyName;
+        }
+        if(hashData.demoLogoPath){
+            this.demoLogoPath = hashData.demoLogoPath;
+        }
+        if(hashData.demoIconPath){
+            this.demoIconPath = hashData.demoIconPath;
+        }
+        window.primaryColor = this.primaryColor;
+        this.setThemeCSS();
+        this.setThemeJS();
     },
     methods: {
         menuIsOpen: function(key){
@@ -66,6 +91,30 @@ const app = new Vue({
                     this.menuClose(this.menusOpen[key]);
                 }
             }
+        },
+        getHashData: function(){
+            let hash = window.location.hash.substr(1);
+
+            return hash.split('&').reduce(function (result, item) {
+                var parts = item.split('=');
+                result[parts[0]] = parts[1];
+                return result;
+            }, {});
+        },
+        setThemeCSS: function(){
+            let link = document.createElement( "link" );
+            link.href = "./themes/"+this.theme+"/css/app.css";
+            link.type = "text/css";
+            link.rel = "stylesheet";
+
+            document.getElementsByTagName( "head" )[0].appendChild( link );
+        },
+        setThemeJS: function(){
+            let script = document.createElement( "script" );
+            script.src = "./themes/"+this.theme+"/js/app.js";
+            script.type = "text/javascript";
+
+            document.getElementsByTagName( "head" )[0].appendChild( script );
         }
     }
 });

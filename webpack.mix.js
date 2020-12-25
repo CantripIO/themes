@@ -10,3 +10,4 @@ mix.options({
 mix.copy('resources/img', 'public/img');
 
 mix.sass('resources/themes/blank/sass/app.scss', 'public/themes/blank/css/app.css');
+mix.copy('resources/themes/blank/js/app.js', 'public/themes/blank/js/app.js');
