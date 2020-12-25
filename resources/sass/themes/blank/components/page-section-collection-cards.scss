@@ -2,7 +2,7 @@
   @apply page-container py-8;
 }
 .collection-cards-container{
-  @apply mt-12 max-w-lg mx-auto grid gap-5;
+  @apply max-w-lg mx-auto grid gap-5;
   @screen lg {
     @apply grid-cols-3 max-w-none;
   }

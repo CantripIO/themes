@@ -18,6 +18,10 @@ Vue.component('layout-page-section-content-block-2', require("./components/layou
 Vue.component('layout-page-section-content-block-without-image', require("./components/layout/page-section-content-block-without-image").default);
 Vue.component('layout-page-section-gallery', require("./components/layout/page-section-gallery").default);
 Vue.component('layout-page-section-collection-cards', require("./components/layout/page-section-collection-cards").default);
+Vue.component('layout-page-section-collection-teasers', require("./components/layout/page-section-collection-teasers").default);
+Vue.component('layout-page-section-collection-teasers-two-column', require("./components/layout/page-section-collection-teasers-two-column").default);
+Vue.component('layout-page-section-code', require("./components/layout/page-section-code").default);
+Vue.component('layout-page-section-form', require("./components/layout/page-section-form").default);
 Vue.component('layout-footer', require("./components/layout/footer").default);
 
 const app = new Vue({

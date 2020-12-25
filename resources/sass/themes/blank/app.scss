@@ -1,27 +1,21 @@
 @tailwind base;
-
 @tailwind components;
 
-.page-container{
-  @apply max-w-7xl mx-auto px-4;
-  @screen sm {
-    @apply px-6;
-  }
-}
-
+@import "components/page";
 @import "components/top-bar";
 @import "components/menu-mobile";
 @import "components/page-content";
-.page-section-header{
-  @apply page-container pt-6;
-}
-.page-section-title-container{
-  @apply prose max-w-none;
-}
+@import "components/pagination";
+@import "components/alerts";
+@import "components/buttons";
+@import "components/page-sections";
 @import "components/page-section-banner";
 @import "components/page-section-content-block";
 @import "components/page-section-gallery";
 @import "components/page-section-collection-cards";
+@import "components/page-section-collection-teasers";
+@import "components/page-section-code";
+@import "components/page-section-form";
 @import "components/footer";
 
 @tailwind utilities;
