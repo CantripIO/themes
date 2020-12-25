@@ -7,6 +7,6 @@ mix.options({
     postCss: [ require('tailwindcss') ]
 });
 
-mix.sass('resources/sass/themes/blank/app.scss', 'public/css/themes/blank/app.css');
-
 mix.copy('resources/img', 'public/img');
+
+mix.sass('resources/themes/blank/sass/app.scss', 'public/themes/blank/css/app.css');
