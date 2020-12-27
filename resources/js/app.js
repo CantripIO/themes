@@ -22,6 +22,7 @@ Vue.component('layout-page-section-collection-teasers', require("./components/la
 Vue.component('layout-page-section-collection-teasers-two-column', require("./components/layout/page-section-collection-teasers-two-column").default);
 Vue.component('layout-page-section-code', require("./components/layout/page-section-code").default);
 Vue.component('layout-page-section-form', require("./components/layout/page-section-form").default);
+Vue.component('layout-single-page-post', require("./components/layout/single-page-post").default);
 Vue.component('layout-footer', require("./components/layout/footer").default);
 
 window.primaryColor = null;

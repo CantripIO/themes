@@ -1,0 +1,44 @@
+.single-post-header{
+  @apply page-container pt-6;
+}
+.single-post-title-container{
+  @apply prose max-w-none;
+}
+.single-post-body{
+  @apply page-container pt-6;
+}
+.single-post-section-main{
+  @screen lg {
+    @apply grid grid-cols-8 gap-8;
+  }
+}
+.single-post-section-media{
+  @apply relative;
+  @screen lg {
+    @apply col-start-6 col-span-3 row-start-1;
+  }
+}
+.single-post-featured-image{
+  @apply rounded-lg shadow-lg object-cover object-center w-full;
+}
+.single-post-section-content{
+  @apply mt-8;
+  @screen lg {
+    @apply mt-0 col-span-5;
+  }
+}
+.single-post-header-byline{
+  @apply mb-8;
+}
+.single-post-author{
+  @apply text-sm font-medium text-gray-900;
+}
+.single-post-date{
+  @apply text-sm text-gray-500;
+}
+.single-post-section-content-body{
+  @apply prose max-w-none;
+}
+.single-post-footer-byline{
+  @apply border-t pt-4 mt-8;
+}
