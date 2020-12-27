@@ -9,5 +9,10 @@ mix.options({
 
 mix.copy('resources/img', 'public/img');
 
-mix.sass('resources/themes/blank/sass/app.scss', 'public/themes/blank/css/app.css');
-mix.copy('resources/themes/blank/js/app.js', 'public/themes/blank/js/app.js');
+if(process.env.CANTRIP_THEME){
+    mix.sass('resources/themes/'+process.env.CANTRIP_THEME+'/sass/app.scss', 'public/themes/'+process.env.CANTRIP_THEME+'/css/app.css');
+    mix.copy('resources/themes/'+process.env.CANTRIP_THEME+'/js/app.js', 'public/themes/'+process.env.CANTRIP_THEME+'/js/app.js');
+}else{
+    mix.sass('resources/themes/blank/sass/app.scss', 'public/themes/blank/css/app.css');
+    mix.copy('resources/themes/blank/js/app.js', 'public/themes/blank/js/app.js');
+}
