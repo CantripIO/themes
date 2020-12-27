@@ -6,7 +6,28 @@ This repository is a tool to help build themes for the [Cantrip website builder]
 
 ## Installation
 
-...
+```
+git clone git@github.com:CantripIO/themes.git cantrip-themes
+cd cantrip-themes
+npm install
+npm run dev
+```
+
+You should now be able to open the files `./public/index.html` and `./public/post.html` to view the page layout with the "blank" default theme
+
+## Installing and Viewing a specific theme
+
+To compile theme files for a specific theme, pass the theme name in a `CANTRIP_THEME` env variable:
+
+```
+CANTRIP_THEME=rad npm run dev
+```
+
+And then view the new theme by passing theme=[theme-name] in your address bar:
+
+```
+.../cantrip-themes/public/index.html#theme=rad
+```
 
 ## Creating a new theme
 
