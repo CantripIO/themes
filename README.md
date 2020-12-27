@@ -2,6 +2,8 @@
 
 This repository is a tool to help build themes for the [Cantrip website builder](https://cantrip.io)
 
+![Cantrip Themes](https://raw.githubusercontent.com/CantripIO/themes/main/resources/img/readme-banner.gif)
+
 ## Installation
 
 ...
