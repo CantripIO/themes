@@ -46,7 +46,7 @@
     @apply text-gray-500 bg-gray-100;
   }
   &:focus{
-    @apply outline-none ring-2 ring-inset ring-indigo-500;
+    @apply outline-none ring-2 ring-inset ring-gray-500;
   }
 }
 .top-bar-menu-toggle-label{

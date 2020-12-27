@@ -1,0 +1,135 @@
+.top-bar {
+  @apply relative;
+}
+
+.top-bar-container {
+  @apply page-container;
+}
+
+.top-bar-items {
+  @apply flex justify-between items-center py-6;
+  @screen md {
+    @apply justify-start space-x-10;
+  }
+}
+
+.top-bar-brand-container {
+  @apply flex justify-start;
+  @screen lg {
+    @apply w-0 flex-1;
+  }
+}
+
+.top-bar-brand{
+  @apply text-4xl text-yellow-100 text-center;
+  font-family: "Permanent Marker", sans-serif;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.top-bar-brand-label {
+  @apply sr-only;
+}
+
+.top-bar-brand-image {
+  @apply h-8 w-auto;
+  @screen sm {
+    @apply h-10;
+  }
+}
+
+.top-bar-menu-toggle-button-container{
+  @apply -mr-2 -my-2;
+  @screen md {
+    @apply hidden;
+  }
+}
+.top-bar-menu-toggle-button{
+  @apply rounded-md p-2 inline-flex items-center justify-center;
+  border: solid 2px #fefde6;
+  color:#fefde6;
+  &:hover{
+    @apply text-gray-500 bg-gray-100;
+    background-color:#fefde6;
+    border: solid 2px #000000;
+    color:#000000;
+  }
+  &:focus{
+    @apply outline-none;
+  }
+}
+.top-bar-menu-toggle-label{
+  @apply sr-only;
+}
+.top-bar-menu-toggle-icon{
+  @apply h-6 w-6;
+}
+
+.top-bar-menu-primary-container{
+  @apply hidden space-x-10 justify-end;
+  @screen md {
+    @apply flex;
+  }
+}
+.top-bar-menu-primary{
+  @apply space-x-10 justify-end;
+  @screen md {
+    @apply flex;
+  }
+}
+.top-bar-menu-dropdown-group{
+  @apply relative;
+}
+.top-bar-menu-item{
+  @apply text-base font-medium text-yellow-100 relative;
+  &:hover{
+    @apply text-white;
+    &:before{
+      display: block;
+      content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 219.19 61.85'><path fill='currentColor' d='M.06 59.53C-2.87 54 101.46-21.08 84.24 9.31 79 20 75.47 31.65 71.21 42.84 92.09 27.13 113.1 10.74 137 0c10.11.24-8.74 30-10.18 35.45 16.85-12.14 35-22.87 55.45-27.57 6.39-1.3 39.11-10.56 36.76 1.19l-1 .65c-8.39 5.53-19.78 2.39-29.19 5.78h.09c-16.93 3.62-33.38 10.02-47.78 19.99-39.18 29.36-20-1.06-10.34-23.26-14.14 7.41-27.24 16.59-40.21 25.85-11.6 7.28-34.69 32.72-23.91.18l-.09.3c3.27-8.83 6.67-17.56 10.07-26.38-22.17 10.13-42 24.75-61 39.87C12.55 53.71 1.46 67.14.06 59.53z'/></svg>");
+      margin: 10px auto 0px auto;
+      height: auto;
+      width: 70px;
+      top: 25px;
+      left: 0;
+      right: 0;
+      position:absolute;
+    }
+  }
+}
+
+.top-bar-menu-item-active{
+  @apply text-white;
+}
+.top-bar-menu-item-dropdown-toggle{
+  @apply group rounded-md inline-flex items-center;
+  &:focus{
+    @apply outline-none;
+  }
+}
+.top-bar-menu-dropdown-expand-icon{
+  @apply ml-2 h-5 w-5 text-yellow-100;
+}
+.top-bar-menu-dropdown-container{
+  @apply absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-sm;
+  @screen lg {
+    @apply ml-0 left-1/2 -translate-x-1/2;
+  }
+  @screen sm {
+    @apply px-0;
+  }
+}
+.top-bar-menu-dropdown{
+  background-color:#0c2639;
+  @apply rounded-lg shadow-lg overflow-hidden relative px-5 py-3;
+  @screen sm {
+    @apply gap-8 p-8;
+  }
+}
+.top-bar-menu-dropdown-item{
+  @apply -m-3 px-3 py-4 flex items-start rounded-lg text-gray-200;
+  &:hover{
+    @apply text-white;
+  }
+}

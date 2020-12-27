@@ -29,6 +29,8 @@ Your structure should look something like this
     
 Alternatively, you can use the "blank" theme as a starting point by copying `./resources/themes/blank` to `./resources/themes/[theme-name]`
 
+You can even create a theme that uses base components from the blank theme except for the elements your theme extends (see "rad" theme for an example)
+
 ### Compiling assets
 
 Cantrip uses Laravel Mix (Webpack) to compile assets. During this process, your SASS files are compiled, and your JS script is copied into `./public`
