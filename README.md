@@ -83,3 +83,9 @@ All Cantrip themes should support the ability to set a primary (or "brand") colo
 You can use javascript to dynamically alter your CSS based on these custom colors. 
 
 For an example of this, view `./resources/themes/blank/js/app.js`
+
+## Submitting your theme
+
+Once you're happy with your theme, create a pull request with the title "Add Theme - [Theme Name]". 
+
+By submitting your theme to this repository, you are allowing Cantrip to display the theme in it's public list of available themes in a full or altered state.  
