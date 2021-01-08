@@ -1,0 +1,64 @@
+.page-section-banner-container{
+  @apply page-container py-8;
+}
+.page-section-banner{
+  .banner-container{
+    @apply relative block w-full;
+  }
+  .banner-title-inner{
+    @apply inline-block p-2 bg-white text-2xl font-black;
+  }
+  .banner-body{
+    @apply mt-4;
+  }
+  .banner-body-inner{
+    @apply inline-block p-2 bg-white text-sm;
+  }
+}
+.page-section-banner-body{
+  @apply overflow-hidden;
+  border: solid 5px #000;
+  background-color:#000;
+}
+.banner-element{
+  @apply bg-center bg-cover flex-col justify-end block h-60;
+  @screen sm {
+    @apply h-80;
+  }
+  @screen lg {
+    @apply h-96;
+  }
+}
+.banner-element-content{
+  @apply page-container py-8;
+}
+.banner-element-title{
+  @apply text-4xl tracking-tight font-extrabold text-white;
+  @screen sm {
+    @apply leading-none;
+  }
+  @screen lg {
+    @apply text-5xl;
+  }
+  @screen xl {
+    @apply text-6xl;
+  }
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+.banner-element-body {
+  @apply text-base text-gray-200 mt-4;
+  @screen sm {
+    @apply text-xl;
+  }
+  @screen lg {
+    @apply text-lg;
+  }
+  @screen xl {
+    @apply text-xl;
+  }
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.VueCarousel-pagination{
+  @apply absolute z-10 bottom-0 pb-2;
+}
