@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 
 @-webkit-keyframes glow {
   from {
@@ -14,7 +14,7 @@
 }
 
 body{
-  font-family: "Courier Prime", sans-serif;
+  font-family: 'El Messiri', sans-serif;
   background-repeat: no-repeat !important;
   background:  linear-gradient(180deg, rgba(50, 204, 160 ,1) 0%, rgba(102, 255, 102,1) 52%, rgb(255, 255, 153) 100%);
   background-color: #FFFF99;
@@ -40,7 +40,7 @@ body{
 @import "components/footer";
 
 .page-section h1, .page-title, .page-section-title{
-  font-family: "Permanent Marker", sans-serif;
+  font-family: 'Merienda', cursive;
 }
 
 @tailwind utilities;
