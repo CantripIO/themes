@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #00e673, 0 0 40px #00e673, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #4dffa6, 0 0 40px #4dffa6, 0 0 50px #4dffa6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+body{
+  font-family: 'El Messiri', sans-serif;
+  background-repeat: no-repeat !important;
+  background:  linear-gradient(180deg, rgba(50, 204, 160 ,1) 0%, rgba(102, 255, 102,1) 52%, rgb(255, 255, 153) 100%);
+  background-color: #FFFF99;
+  background-position: top;
+}
+
+@import "../../blank/sass/components/page";
+@import "components/top-bar";
+@import "../../blank/sass/components/menu-mobile";
+@import "../../blank/sass/components/page-content";
+@import "../../blank/sass/components/pagination";
+@import "../../blank/sass/components/alerts";
+@import "../../blank/sass/components/buttons";
+@import "../../blank/sass/components/page-sections";
+@import "components/page-section-banner";
+@import "../../blank/sass/components/page-section-content-block";
+@import "../../blank/sass/components/page-section-gallery";
+@import "../../blank/sass/components/page-section-collection-cards";
+@import "../../blank/sass/components/page-section-collection-teasers";
+@import "../../blank/sass/components/page-section-code";
+@import "../../blank/sass/components/page-section-form";
+@import "../../blank/sass/components/single-page-post";
+@import "components/footer";
+
+.page-section h1, .page-title, .page-section-title{
+  font-family: 'Merienda', cursive;
+}
+
+@tailwind utilities;
