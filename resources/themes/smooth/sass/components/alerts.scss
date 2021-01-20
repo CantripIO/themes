@@ -1,0 +1,12 @@
+.alert{
+  @apply border-l-4 p-4 text-sm mb-4 text-blue-200;
+}
+.alert-success{
+  @apply bg-blue-50 border-blue-400 text-blue-500;
+}
+.alert-warning{
+  @apply bg-yellow-50 border-yellow-400 text-yellow-700;
+}
+.alert-danger{
+  @apply bg-red-50 border-red-400 text-red-700;
+}

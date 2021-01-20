@@ -1,0 +1,10 @@
+.page-section-header{
+  @apply page-container pt-6;
+}
+
+.page-section-title {
+  @apply text-3xl text-center;
+  @screen sm {
+    @apply text-4xl text-left;
+  }
+}

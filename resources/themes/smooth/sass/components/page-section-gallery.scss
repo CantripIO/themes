@@ -1,0 +1,39 @@
+.page-section-gallery{
+  @apply page-container py-8;
+}
+.gallery-container{
+  @apply space-y-0 grid grid-cols-2 gap-x-6 gap-y-12;
+  @screen sm {
+    @apply grid grid-cols-3 gap-x-6 gap-y-12 space-y-0;
+  }
+  @screen lg {
+    @apply grid-cols-4 gap-x-8;
+  }
+}
+.gallery-item-container{
+  @apply rounded-lg;
+  transition: all .15s ease-in-out;
+  &:hover {
+    transform:scale(1.02)
+  }
+}
+.gallery-item{
+}
+.gallery-item-image{
+  @apply rounded-t-lg;
+}
+.gallery-content-container{
+  background: transparent;
+}
+.gallery-title{
+  @apply text-lg leading-6 font-medium space-y-1;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 6px 0;
+    color: silver;
+}
+
+.gallery-item-container:hover .gallery-title {
+  color: #636363;
+}

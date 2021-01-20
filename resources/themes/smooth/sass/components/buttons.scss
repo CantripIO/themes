@@ -1,0 +1,9 @@
+.button{
+  @apply inline-flex justify-center py-2 px-6 border border-gray-300 shadow-sm rounded-md text-xl text-gray-500 text-center outline-none;
+  &:focus{
+    @apply outline-none ring-2 ring-offset-2 ring-gray-200;
+  }
+  &:hover{
+    @apply text-blue-400 border-blue-300;
+  }
+}
