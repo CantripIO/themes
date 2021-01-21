@@ -1,0 +1,60 @@
+.pagination{
+  @apply border-t border-gray-200 px-4 flex items-center justify-between mt-6;
+  @screen sm {
+    @apply px-0;
+  }
+  .previous-container{
+    @apply -mt-px w-0 flex-1 flex;
+    .previous-link{
+      @apply border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-gray-500;
+      &:hover{
+        @apply text-blue-400 border-blue-300;
+        .previous-link-icon{
+          @apply text-blue-300;
+        }
+      }
+      &:focus {
+        @apply outline-none;
+      }
+    }
+    .previous-link-icon{
+      @apply mr-3 h-5 w-5 text-gray-400;
+    }
+  }
+  .next-container{
+    @apply -mt-px w-0 flex-1 flex justify-end;
+    .next-link{
+      @apply border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-gray-500;
+      &:hover{
+        @apply text-blue-400 border-blue-300;
+        .next-link-icon{
+          @apply text-blue-300;
+        }
+      }
+      &:focus {
+        @apply outline-none;
+      }
+    }
+    .next-link-icon{
+      @apply ml-3 h-5 w-5 text-gray-400;
+    }
+  }
+  .page-link-container{
+    @apply hidden;
+    @screen md {
+      @apply -mt-px flex;
+    }
+  }
+  .page-link{
+    @apply border-transparent text-gray-500 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium;
+    &:hover{
+      @apply text-blue-400 border-blue-300;
+    }
+    &:focus {
+      @apply outline-none;
+    }
+    &.active{
+      @apply border-blue-500 text-blue-500;
+    }
+  }
+}

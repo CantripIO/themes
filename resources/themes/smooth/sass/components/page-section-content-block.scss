@@ -1,0 +1,92 @@
+.page-section-content-block{
+  @apply page-container py-8;
+}
+.content-block-content{
+  @apply prose max-w-none;
+}
+.page-section-content-block.with-featured-image{
+  @screen md {
+    @apply flex;
+  }
+}
+.page-section-list-item {
+  background: #fcfcfc;
+}
+.page-section-list-item:nth-child(even) .page-section-content-block.with-featured-image{
+  @apply flex-row-reverse;
+}
+
+.content-block-featured-image-container{
+  @apply mx-auto;
+}
+.content-block-featured-image{
+  @apply object-cover w-40 h-40 rounded-full mx-auto mb-6 shadow opacity-0;
+  @screen md {
+    @apply max-w-md w-auto h-auto rounded-lg mb-0;
+  }
+  @screen lg {
+    @apply max-w-lg;
+  }
+}
+
+.page-section-list-item:nth-child(odd) .content-block-featured-image-container{
+  @screen md {
+    @apply mr-8;
+    @apply ml-0;
+  }
+}
+
+.page-section-list-item:nth-child(even) .content-block-featured-image-container{
+  @screen md {
+    @apply mr-0;
+    @apply ml-8;
+  }
+}
+
+.page-section-list-item:nth-child(even) .page-section-display-content-block{
+  @apply flex-row-reverse;
+}
+
+.content-block-content{
+  @apply flex-1;
+}
+
+.content-block-content pre {
+  background: #17202c;
+}
+
+.content-block-content code {
+ color: #17202c;
+}
+
+.content-block-content pre code {
+  @apply text-white;
+ }
+
+.content-block-content blockquote {
+  @apply py-0.5 rounded bg-gray-100 border-gray-300;
+}
+
+.content-block-content h1, .content-block-content h2, .content-block-content h3, .content-block-content h4, .content-block-content h5, .content-block-content h6 {
+  font-weight: 300;
+  color: #636363;  
+}
+
+.content-block-content p {
+  color: #636363;  
+}
+
+.content-block-content strong {
+  color: #636363;  
+}
+
+.content-block-content li {
+  color: #636363;  
+}
+
+.content-block-content a {
+  @apply text-blue-400 no-underline;
+  &:hover{
+    @apply underline
+  }
+}

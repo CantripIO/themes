@@ -1,0 +1,39 @@
+.footer-container{
+  @apply bg-gray-100;
+}
+.footer{
+  @apply max-w-7xl mx-auto py-12 px-4 overflow-hidden;
+  @screen sm {
+    @apply px-6;
+  }
+  @screen lg {
+    @apply px-8;
+  }
+}
+.footer-menu{
+  @apply -mx-5 -my-2 flex flex-wrap justify-center;
+}
+.footer-social-menu{
+  @apply mt-8 flex justify-center space-x-6;
+}
+.footer-copyright{
+  @apply mt-8 text-center text-base text-gray-400;
+}
+.footer-menu-item{
+  @apply text-base text-gray-500 px-5 py-2;
+  &:hover{
+    @apply text-blue-400;
+  }
+}
+.footer-social-menu-item{
+  @apply text-gray-400;
+  &:hover{
+    @apply text-blue-500;
+  }
+}
+.footer-social-menu-item-label{
+  @apply sr-only;
+}
+.footer-social-menu-item-icon{
+  @apply h-6 w-6;
+}
