@@ -1,0 +1,18 @@
+.alert{
+  @apply border-l-4 p-4 text-base mb-4 text-gray-200 rounded-r-md;
+}
+.alert-success{
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #155724;
+}
+.alert-warning{
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.alert-danger{
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #721c24;
+}

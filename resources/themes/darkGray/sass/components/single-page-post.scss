@@ -1,0 +1,86 @@
+.single-post-header{
+  @apply page-container pt-6;
+}
+.single-post-title-container{
+  @apply prose max-w-none;
+}
+.single-post-title-container .single-post-title, .single-post-section-content-body h1 {
+  color: #aaa;
+}
+.single-post-body{
+  @apply page-container pt-2;
+}
+.single-post-section-main{
+  @screen lg {
+    @apply grid grid-cols-8 gap-8;
+  }
+}
+.single-post-section-media{
+  @apply relative;
+  @screen lg {
+    @apply col-start-6 col-span-3 row-start-1;
+  }
+}
+.single-post-featured-image{
+  @apply rounded-lg shadow-lg object-cover object-center w-full;
+}
+.single-post-section-content{
+  @apply mt-8;
+  @screen lg {
+    @apply mt-0 col-span-5;
+  }
+}
+.single-post-header-byline{
+  @apply mb-8;
+}
+.single-post-author{
+  @apply text-sm font-medium;
+  color: wheat;
+}
+.single-post-date{
+  @apply text-sm text-gray-300;
+}
+.single-post-section-content-body{
+  @apply prose max-w-none;
+  color: #aaa;
+}
+.single-post-section-content-body h1 {
+  color: #aaa;
+}
+.single-post-section-content-body h2, .single-post-section-content-body h3, .single-post-section-content-body h4, .single-post-section-content-body h5 {
+  color: wheat;
+}
+
+.single-post-section-content-body strong {
+  color: #aaa;
+}
+
+.single-post-section-content-body a {
+  @apply no-underline;
+  color: wheat;
+}
+.single-post-section-content-body a:hover {
+  @apply underline;
+}
+
+.single-post-section-content-body blockquote {
+  @apply py-0.5 rounded;
+  background: #555;
+  border-color: #ddd;
+}
+.single-post-section-content-body blockquote p {
+  color: #ddd;
+}
+
+.single-post-section-content-body  pre {
+  background: #333;
+}
+
+.single-post-section-content-body code {
+ color: #eee;
+}
+
+.single-post-footer-byline{
+  @apply border-t pt-4 mt-8;
+  border-color: #333;
+}

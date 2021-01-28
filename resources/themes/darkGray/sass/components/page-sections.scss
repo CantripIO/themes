@@ -1,0 +1,12 @@
+.page-section-header{
+  @apply page-container pt-6;
+  background-color: #222;
+}
+
+.page-section-title {
+  @apply text-3xl text-center;
+  color: #aaa;
+  @screen sm {
+    @apply text-4xl text-left;
+  }
+}

@@ -1,0 +1,126 @@
+.top-bar {
+  @apply relative;
+  background-color: #222;
+  border-bottom: 1px solid #333;
+}
+
+.top-bar-container {
+  @apply page-container;
+}
+
+.top-bar-items {
+  @apply flex justify-between items-center py-6;
+  @screen md {
+    @apply justify-start space-x-10;
+  }
+}
+
+.top-bar-brand-container {
+  @apply flex justify-start;
+  @screen lg {
+    @apply w-0 flex-1;
+  }
+}
+
+.top-bar-brand {
+  background-color: wheat;
+  border-radius: 5px;
+  padding: 1px 4px;
+}
+
+.top-bar-brand-label {
+  @apply sr-only;
+}
+
+.top-bar-brand-image {
+  @apply h-8 w-auto;
+  @screen sm {
+    @apply h-10;
+  }
+}
+.menu-mobile-branding-container {
+  @apply p-1 rounded-lg;
+  background-color: wheat;
+}
+.top-bar-menu-toggle-button-container{
+  @apply -mr-2 -my-2;
+  @screen md {
+    @apply hidden;
+  }
+}
+.top-bar-menu-toggle-button{
+  @apply rounded-md p-2 inline-flex items-center justify-center;
+  color: #aaa;
+  &:hover{
+    color: wheat;
+  }
+  &:focus{
+    @apply outline-none;
+    color: wheat;
+    border: 1px solid wheat;
+  }
+}
+.top-bar-menu-toggle-label{
+  @apply sr-only;
+}
+.top-bar-menu-toggle-icon{
+  @apply h-6 w-6;
+}
+.top-bar-menu-primary-container{
+  @apply hidden space-x-10 justify-end;
+  @screen md {
+    @apply flex;
+  }
+}
+.top-bar-menu-primary{
+  @apply space-x-10 justify-end;
+  @screen md {
+    @apply flex;
+  }
+}
+.top-bar-menu-dropdown-group{
+  @apply relative;
+}
+.top-bar-menu-item{
+  @apply text-base font-medium text-gray-300;
+  &:hover{
+    color: wheat;
+    .top-bar-menu-dropdown-expand-icon {
+      color: wheat;
+    }
+  }
+}
+.top-bar-menu-item-active{
+  color: wheat;
+}
+.top-bar-menu-item-dropdown-toggle{
+  @apply group rounded-md inline-flex items-center;
+  &:focus{
+    @apply outline-none;
+  }
+}
+.top-bar-menu-dropdown-expand-icon{
+  @apply ml-2 h-5 w-5 text-gray-400;
+}
+.top-bar-menu-dropdown-container{
+  @apply absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-sm;
+  @screen lg {
+    @apply ml-0 left-1/2 -translate-x-1/2;
+  }
+  @screen sm {
+    @apply px-0;
+  }
+}
+.top-bar-menu-dropdown{
+  @apply rounded-lg shadow-lg ring-1 ring-white ring-opacity-5 overflow-hidden relative px-5 py-3;
+  background-color: #222;
+  @screen sm {
+    @apply gap-8 p-8;
+  }
+}
+.top-bar-menu-dropdown-item{
+  @apply -m-3 px-3 py-4 flex items-start rounded-lg text-gray-300;
+  &:hover{
+    color: wheat;
+  }
+}

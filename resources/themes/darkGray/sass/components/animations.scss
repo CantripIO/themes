@@ -1,0 +1,16 @@
+.grayscale {
+    -webkit-filter: grayscale(80%);
+	filter: grayscale(80%);
+}
+
+.removeGrayscale{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.removeGrayscaleTransition {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: 1.5s ease-in-out;
+    transition: 1.5s ease-in-out;
+}
