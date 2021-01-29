@@ -4,7 +4,7 @@
 }
 
 .page-section-title {
-  @apply text-3xl text-center;
+  @apply text-3xl text-center opacity-90 font-light;
   color: #aaa;
   @screen sm {
     @apply text-4xl text-left;

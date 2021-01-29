@@ -4,7 +4,8 @@
 .single-post-title-container{
   @apply prose max-w-none;
 }
-.single-post-title-container .single-post-title, .single-post-section-content-body h1 {
+.single-post-title-container .single-post-title {
+  @apply opacity-90 font-light;
   color: #aaa;
 }
 .single-post-body{
@@ -45,10 +46,11 @@
   color: #aaa;
 }
 .single-post-section-content-body h1 {
+  @apply opacity-90 font-light;
   color: #aaa;
 }
 .single-post-section-content-body h2, .single-post-section-content-body h3, .single-post-section-content-body h4, .single-post-section-content-body h5 {
-  @apply opacity-90;
+  @apply opacity-90 font-light;
   color: wheat;
 }
 
