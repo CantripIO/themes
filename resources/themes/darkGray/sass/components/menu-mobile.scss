@@ -52,7 +52,7 @@
   @apply pl-3;
 }
 .menu-mobile-primary-sub-item{
-  @apply p-3 flex items-center rounded-md text-base font-medium opacity-70;
+  @apply p-3 flex items-center rounded-md text-base font-medium opacity-80;
   color: #aaa;
   &:before {
     content: "•";
