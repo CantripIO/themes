@@ -61,6 +61,9 @@ if (window.primaryColor == '#815ad5' && !window.location.href.includes('primaryC
     .pagination .next-container .next-link:hover .next-link-icon { color: " + window.primaryColor + "; opacity: 0.6 } \
     .footer-menu-item:hover { color: " + window.primaryColor + "; opacity: 0.8 } \
     .footer-social-menu-item:hover { color: " + window.primaryColor + "} \
+    .single-post-section-content-body a { color: " + window.primaryColor + "} \
+    .single-post-section-content-body h2, .single-post-section-content-body h3, .single-post-section-content-body h4, .single-post-section-content-body h5 { color: " + window.primaryColor + "} \
+    .single-post-author { color: " + window.primaryColor + "} \
 ";
 
     let themeStyle = document.createElement('style');

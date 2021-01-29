@@ -76,7 +76,7 @@
 }
 
 .content-block-content h1, .content-block-content h2, .content-block-content h3, .content-block-content h4, .content-block-content h5, .content-block-content h6 {
-  font-weight: 300;
+  @apply opacity-90 font-light;
   color: wheat; 
 }
 

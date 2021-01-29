@@ -48,6 +48,7 @@
   color: #aaa;
 }
 .single-post-section-content-body h2, .single-post-section-content-body h3, .single-post-section-content-body h4, .single-post-section-content-body h5 {
+  @apply opacity-90;
   color: wheat;
 }
 
@@ -72,7 +73,7 @@
   color: #ddd;
 }
 
-.single-post-section-content-body  pre {
+.single-post-section-content-body pre {
   background: #333;
 }
 
