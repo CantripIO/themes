@@ -1,0 +1,65 @@
+.pagination{
+  @apply border-t px-4 flex items-center justify-between mt-6;
+  border-color: #444;
+  @screen sm {
+    @apply px-0;
+  }
+  .previous-container{
+    @apply -mt-px w-0 flex-1 flex;
+    .previous-link{
+      @apply border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-gray-300;
+      &:hover{
+        color: wheat;
+        border-color: wheat;
+        .previous-link-icon{
+         color: wheat;
+        }
+      }
+      &:focus {
+        @apply outline-none;
+      }
+    }
+    .previous-link-icon{
+      @apply mr-3 h-5 w-5 text-gray-400;
+    }
+  }
+  .next-container{
+    @apply -mt-px w-0 flex-1 flex justify-end;
+    .next-link{
+      @apply border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-gray-300;
+      &:hover{
+        color: wheat;
+        border-color: what;
+        .next-link-icon{
+          color: wheat;
+        }
+      }
+      &:focus {
+        @apply outline-none;
+      }
+    }
+    .next-link-icon{
+      @apply ml-3 h-5 w-5 text-gray-400;
+    }
+  }
+  .page-link-container{
+    @apply hidden;
+    @screen md {
+      @apply -mt-px flex;
+    }
+  }
+  .page-link{
+    @apply border-transparent text-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium;
+    &:hover{
+      color: rgba(245, 222, 179, 0.7);
+      border-color: rgba(245, 222, 179, 0.7);
+    }
+    &:focus {
+      @apply outline-none;
+    }
+    &.active{
+      color: wheat;
+      border-color: wheat;
+    }
+  }
+}

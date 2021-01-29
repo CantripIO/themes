@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #636363;
+    background-color: #2f3238;
+}
+
+iframe {
+    border-radius: 20px;
+    background: #333;
+    -webkit-filter: grayscale(80%);
+	filter: grayscale(80%);
+	-webkit-transition: .15s ease-in-out;
+	transition: .15s ease-in-out;
+}
+iframe:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+hr {
+    background-color: #d8d8d8;
+}

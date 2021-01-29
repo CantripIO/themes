@@ -1,0 +1,57 @@
+.page-section-collection-cards{
+  @apply page-container py-8;
+  background-color: #222;
+}
+.collection-cards-container{
+  @apply max-w-lg mx-auto grid gap-5;
+  @screen lg {
+    @apply grid-cols-3 max-w-none;
+  }
+}
+.collection-cards-item{
+  @apply flex flex-col rounded-lg overflow-hidden;
+  &:hover .collection-cards-item-image {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+	  -webkit-transition: .3s;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+.collection-cards-item-image-container{
+  @apply flex-shrink-0;
+  overflow: hidden;
+}
+.collection-cards-item-image{
+  @apply h-48 w-full object-cover;
+  -webkit-filter: grayscale(80%);
+	filter: grayscale(80%);
+	-webkit-transition: .15s ease-in-out;
+	transition: .15s ease-in-out;
+}
+.collection-cards-item-content-container{
+  @apply flex-1 p-6 flex flex-col justify-between;
+  background-color: #333;
+}
+.collection-cards-item-title{
+  @apply text-xl font-semibold text-gray-300;
+  &:hover {
+   color: wheat;
+  }
+  transition: color .1s ease-in-out;
+}
+.collection-cards-item-date{
+  @apply flex space-x-1 text-sm text-gray-400;
+}
+.collection-cards-item-teaser{
+  @apply mt-3 text-base text-gray-300;
+}
+.collection-cards-item-read-more{
+  @apply mt-3 text-base;
+}
+.collection-cards-item-read-more-link{
+  color: wheat;
+  &:hover{
+    @apply underline;
+  }
+}

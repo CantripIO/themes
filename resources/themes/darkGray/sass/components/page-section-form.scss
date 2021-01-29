@@ -1,0 +1,42 @@
+.page-section-form{
+  @apply page-container py-8;
+  background-color: #222;
+}
+.page-section-form-content{
+  @apply w-full;
+}
+.form{
+  @apply grid grid-cols-6 gap-6;
+}
+.form-field{
+  @apply col-span-6;
+}
+.form-field-label{
+  @apply block text-sm font-medium;
+  color: #aaa;
+}
+.form-field-input{
+  @apply mt-1 block w-full shadow-sm border border-gray-300 rounded-md px-4 py-3 outline-none;
+  @screen sm {
+    @apply text-base;
+  }
+  &:focus {
+    @apply border-blue-400;
+  }
+}
+.form-field-input-select {
+  @apply bg-gray-100 border-gray-300;
+  &:focus {
+    @apply border-gray-400;
+  }
+}
+.form-field-input-select option:hover {
+  @apply bg-red-200;
+}
+.form-field-checkbox-group, .form-field-radio-group{
+  @apply text-sm font-medium text-gray-700 pt-1;
+}
+.form-field-checkbox-label, .form-field-radio-label{
+  @apply ml-2;
+  color: #aaa;
+}
