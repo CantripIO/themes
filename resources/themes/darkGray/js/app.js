@@ -4,7 +4,8 @@ You can use your theme's app.js file to see how your theme responds to a dynamic
 Test this out by setting the color in the hash in the browser address, ie:
 index.html#theme=blank&primaryColor=#00ff00
 
-Recommended colors:
+In dark themes, it is recommended to use light colors.
+Good examples:
 
 wheat (default)
 #53b6ac (light green)
@@ -38,6 +39,7 @@ if (window.primaryColor == '#815ad5' && !window.location.href.includes('primaryC
     // :hover/:focus changes can be made via a trick like this
     let themeCSS = "\
     .top-bar-brand { background-color: " + window.primaryColor + " } \
+    .menu-mobile-branding-container { background-color: " + window.primaryColor + " } \
     .top-bar-menu-item:hover { color: " + window.primaryColor + " } \
     .top-bar-menu-item-active { color: " + window.primaryColor + " } \
     .top-bar-menu-item:hover .top-bar-menu-dropdown-expand-icon { color: " + window.primaryColor + "} \
@@ -61,6 +63,9 @@ if (window.primaryColor == '#815ad5' && !window.location.href.includes('primaryC
     .pagination .next-container .next-link:hover .next-link-icon { color: " + window.primaryColor + "; opacity: 0.6 } \
     .footer-menu-item:hover { color: " + window.primaryColor + "; opacity: 0.8 } \
     .footer-social-menu-item:hover { color: " + window.primaryColor + "} \
+    .single-post-section-content-body a { color: " + window.primaryColor + "} \
+    .single-post-section-content-body h2, .single-post-section-content-body h3, .single-post-section-content-body h4, .single-post-section-content-body h5 { color: " + window.primaryColor + "} \
+    .single-post-author { color: " + window.primaryColor + "} \
 ";
 
     let themeStyle = document.createElement('style');
@@ -109,9 +114,9 @@ function stickyTopBar() {
     });
 }
 
-function fadeWhenScroll(elClass) {
+function colorizeWhenScroll(elsGray) {
 
-    function fadeEffect(els) {
+    function removeGrayScale(els) {
         for (let el = 0; el < els.length; el++) {
             let elCenter = els[el].getBoundingClientRect().top + (els[el].getBoundingClientRect().height / 2)
             if (window.innerHeight >= elCenter && els[el].style.opacity == 0) {
@@ -121,10 +126,9 @@ function fadeWhenScroll(elClass) {
         }
     }
 
-    const elsToFade = document.getElementsByClassName(elClass);
-    fadeEffect(elsToFade)
+    removeGrayScale(elsGray)
     document.addEventListener('scroll', (e) => {
-        fadeEffect(elsToFade)
+        removeGrayScale(elsGray)
     })
 }
 
@@ -149,9 +153,9 @@ if (!BANNER_CONTENT_EFFECT){
     }
 }
 
+const elsGray = [...document.getElementsByClassName("content-block-featured-image"), ...document.getElementsByClassName("single-post-featured-image")]
 if (!FEATURED_IMAGES_EFFECT) {
-    const elsToFade = document.getElementsByClassName("content-block-featured-image");
-    for (let el = 0; el < elsToFade.length; el++) elsToFade[el].classList.add("removeGrayscale")
+    for (let el = 0; el < elsGray.length; el++) elsGray[el].classList.add("removeGrayscale")
 }
 
 // Waits for all elements to load
@@ -171,5 +175,5 @@ window.onload = function () {
     }
 
     // Fade In Effect on Featured Images
-    if (FEATURED_IMAGES_EFFECT) fadeWhenScroll("content-block-featured-image")
+    if (FEATURED_IMAGES_EFFECT) colorizeWhenScroll(elsGray)
 }
